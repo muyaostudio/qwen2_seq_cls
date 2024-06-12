@@ -14,6 +14,12 @@ Qwen2 的 [modeling.py](https://github.com/huggingface/transformers/blob/main/sr
 - test.py：推理代码，自行修改开头路径和测试数据，执行 `python test.py` 即可测试。
 - data/example.jsonl：数据集，可自行替换。
 
+## 后续改进
+- 兼容单标签分类和多标签分类
+- 句尾添加 special token 如 `[CLS]` 作为用于分类任务的标记
+- 支持多机多卡训练
+- ...
+
 ## 补充说明
 Qwen2ForSequenceClassification 官方实现代码：
 ```python
